@@ -6,6 +6,10 @@ const app=express()
 app.use(cors())
 const resumeroutes=require("./src/routes/resumeroute")
 app.use(express.json())
+app.use((req, res, next) => {
+  console.log(req.method, req.url);
+  next();
+});
 mongoose.connect(process.env.MONGO_URI)
 .then(()=> console.log("MongoDB connected"))
 .catch((err)=>console.log(err))
