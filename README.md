@@ -6,7 +6,7 @@ ResumeIQ is an AI-powered resume analysis platform that helps job seekers improv
 
 ## Overview
 
-The application combines a modern React frontend with a Node.js backend and integrates Google's Gemini API to analyze resumes. Uploaded files are processed securely, and the generated feedback focuses on improving relevance, clarity, and ATS compatibility.
+The application combines a modern React frontend with a Node.js backend and integrates Groq API to analyze resumes. Uploaded files are processed securely, and the generated feedback focuses on improving relevance, clarity, and ATS compatibility.
 
 ---
 
@@ -42,7 +42,7 @@ The application combines a modern React frontend with a Node.js backend and inte
 
 ### AI
 
-- Google Gemini API
+- Groq API
 
 ---
 
@@ -93,7 +93,7 @@ Create a `.env` file.
 ```env
 PORT=8000
 MONGODB_URI=your_mongodb_connection_string
-GEMINI_API_KEY=your_gemini_api_key
+GROQ_API_KEY=your_groq_api_key
 JWT_SECRET=your_secret_key
 ```
 
